@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		812505102E3D7672009C5331 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 812505092E3D7672009C5331 /* Makefile */; };
+		812505112E3D7672009C5331 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8125050B2E3D7672009C5331 /* Student.cpp */; };
+		812505122E3D7672009C5331 /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 812505072E3D7672009C5331 /* Course.cpp */; };
+		812505132E3D7672009C5331 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 812505082E3D7672009C5331 /* main.cpp */; };
+		812505142E3D7672009C5331 /* UniversitySystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8125050E2E3D7672009C5331 /* UniversitySystem.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		812504E72E3AEE5E009C5331 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,16 +27,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		812504E92E3AEE5E009C5331 /* University Course Management System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "University Course Management System"; sourceTree = BUILT_PRODUCTS_DIR; };
+		812505062E3D7672009C5331 /* Course.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		812505072E3D7672009C5331 /* Course.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Course.cpp; sourceTree = "<group>"; };
+		812505082E3D7672009C5331 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		812505092E3D7672009C5331 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8125050A2E3D7672009C5331 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		8125050B2E3D7672009C5331 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		8125050D2E3D7672009C5331 /* UniversitySystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniversitySystem.h; sourceTree = "<group>"; };
+		8125050E2E3D7672009C5331 /* UniversitySystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UniversitySystem.cpp; sourceTree = "<group>"; };
+		812505152E3D76A4009C5331 /* University Course Management System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "University Course Management System"; path = "/Users/violetchaffee/Desktop/University-Course-Management-System/build/Debug/University Course Management System"; sourceTree = "<absolute>"; };
+		812505162E3D796B009C5331 /* test_data1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data1.txt; sourceTree = "<group>"; };
+		812505172E3D79A6009C5331 /* test_data2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		812504EB2E3AEE5E009C5331 /* University Course Management System */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "University Course Management System";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		812504E62E3AEE5E009C5331 /* Frameworks */ = {
@@ -44,17 +54,25 @@
 		812504E02E3AEE5E009C5331 = {
 			isa = PBXGroup;
 			children = (
-				812504EB2E3AEE5E009C5331 /* University Course Management System */,
-				812504EA2E3AEE5E009C5331 /* Products */,
+				8125050F2E3D7672009C5331 /* UniversityCourseManagementSystem */,
 			);
 			sourceTree = "<group>";
 		};
-		812504EA2E3AEE5E009C5331 /* Products */ = {
+		8125050F2E3D7672009C5331 /* UniversityCourseManagementSystem */ = {
 			isa = PBXGroup;
 			children = (
-				812504E92E3AEE5E009C5331 /* University Course Management System */,
+				812505062E3D7672009C5331 /* Course.h */,
+				812505072E3D7672009C5331 /* Course.cpp */,
+				812505082E3D7672009C5331 /* main.cpp */,
+				812505092E3D7672009C5331 /* Makefile */,
+				8125050A2E3D7672009C5331 /* Student.h */,
+				8125050B2E3D7672009C5331 /* Student.cpp */,
+				812505162E3D796B009C5331 /* test_data1.txt */,
+				812505172E3D79A6009C5331 /* test_data2.txt */,
+				8125050D2E3D7672009C5331 /* UniversitySystem.h */,
+				8125050E2E3D7672009C5331 /* UniversitySystem.cpp */,
 			);
-			name = Products;
+			path = UniversityCourseManagementSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,14 +90,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				812504EB2E3AEE5E009C5331 /* University Course Management System */,
-			);
 			name = "University Course Management System";
 			packageProductDependencies = (
 			);
 			productName = "University Course Management System";
-			productReference = 812504E92E3AEE5E009C5331 /* University Course Management System */;
+			productReference = 812505152E3D76A4009C5331 /* University Course Management System */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -93,6 +108,7 @@
 				TargetAttributes = {
 					812504E82E3AEE5E009C5331 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -106,7 +122,7 @@
 			mainGroup = 812504E02E3AEE5E009C5331;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 812504EA2E3AEE5E009C5331 /* Products */;
+			productRefGroup = 812504E02E3AEE5E009C5331;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -120,6 +136,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812505102E3D7672009C5331 /* Makefile in Sources */,
+				812505112E3D7672009C5331 /* Student.cpp in Sources */,
+				812505122E3D7672009C5331 /* Course.cpp in Sources */,
+				812505132E3D7672009C5331 /* main.cpp in Sources */,
+				812505142E3D7672009C5331 /* UniversitySystem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +265,25 @@
 		812504F12E3AEE5E009C5331 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 579PX8SUNC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		812504F22E3AEE5E009C5331 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 579PX8SUNC;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};

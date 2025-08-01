@@ -1,0 +1,52 @@
+# Test Data for University Course Management System
+# This file contains sample data for testing the system
+# This is the most basic level of sample data, without any waitlists being formed
+
+# Sample Students
+# Format: STUDENT,ID,Full Name
+STUDENT,S001,Alice Johnson
+STUDENT,S002,Bob Smith
+STUDENT,S003,Carol Davis
+STUDENT,S004,David Wilson
+STUDENT,S005,Eva Brown
+STUDENT,S006,Frank Miller
+STUDENT,S007,Grace Lee
+STUDENT,S008,Henry Taylor
+STUDENT,S009,Iris Garcia
+STUDENT,S010,Jack Anderson
+
+# Sample Courses
+# Format: COURSE,Code,Title,Instructor,Capacity
+COURSE,CS101,Introduction to Computer Science,Dr. Smith,25
+COURSE,MATH201,Calculus I,Dr. Johnson,30
+COURSE,ENG101,English Composition,Dr. Davis,20
+COURSE,PHYS101,Physics I,Dr. Wilson,15
+COURSE,HIST101,World History,Dr. Brown,35
+COURSE,CS201,Data Structures,Dr. Smith,20
+COURSE,MATH202,Calculus II,Dr. Johnson,25
+COURSE,ENG201,Advanced Writing,Dr. Davis,18
+COURSE,PHYS102,Physics II,Dr. Wilson,12
+COURSE,ART101,Introduction to Art,Dr. Garcia,40
+
+# Sample Enrollments
+# Format: ENROLL,StudentID,CourseCode
+ENROLL,S001,CS101
+ENROLL,S001,MATH201
+ENROLL,S002,CS101
+ENROLL,S002,ENG101
+ENROLL,S003,MATH201
+ENROLL,S003,PHYS101
+ENROLL,S004,HIST101
+ENROLL,S005,CS101
+ENROLL,S005,MATH201
+ENROLL,S005,ENG101
+ENROLL,S006,CS201
+ENROLL,S006,PHYS101
+ENROLL,S007,ENG201
+ENROLL,S007,ART101
+ENROLL,S008,MATH202
+ENROLL,S008,HIST101
+ENROLL,S009,CS101
+ENROLL,S009,PHYS102
+ENROLL,S010,MATH201
+ENROLL,S010,ENG101
