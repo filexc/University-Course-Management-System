@@ -38,6 +38,8 @@
 		812505152E3D76A4009C5331 /* University Course Management System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "University Course Management System"; path = "/Users/violetchaffee/Desktop/University-Course-Management-System/build/Debug/University Course Management System"; sourceTree = "<absolute>"; };
 		812505162E3D796B009C5331 /* test_data1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data1.txt; sourceTree = "<group>"; };
 		812505172E3D79A6009C5331 /* test_data2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data2.txt; sourceTree = "<group>"; };
+		812505182E3D7BCF009C5331 /* test_data3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data3.txt; sourceTree = "<group>"; };
+		812505192E3D7C9D009C5331 /* test_data4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data4.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,8 @@
 		8125050F2E3D7672009C5331 /* UniversityCourseManagementSystem */ = {
 			isa = PBXGroup;
 			children = (
+				812505182E3D7BCF009C5331 /* test_data3.txt */,
+				812505192E3D7C9D009C5331 /* test_data4.txt */,
 				812505062E3D7672009C5331 /* Course.h */,
 				812505072E3D7672009C5331 /* Course.cpp */,
 				812505082E3D7672009C5331 /* main.cpp */,

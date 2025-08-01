@@ -21,7 +21,8 @@ STUDENT,S024,Daniel Martinez
 STUDENT,S025,Amanda Clark
 
 # Sample Courses
-# Format: COURSE,Code,Title,Instructor,CapacityCOURSE,CS501,Machine Learning,Dr. Mitchell,20
+# Format: COURSE,Code,Title,Instructor,Capacity
+COURSE,CS501,Machine Learning,Dr. Mitchell,20
 COURSE,CS502,Artificial Intelligence,Dr. Wilson,18
 COURSE,CS503,Computer Vision,Dr. Gonzalez,15
 COURSE,CS504,Natural Language Processing,Dr. Chen,12
