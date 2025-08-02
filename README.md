@@ -1,6 +1,8 @@
 # University Course Management System
-A C++ application that manages student and course data, handles enrollment operations, and provides administrative tools for university course management. The project demonstrates the
+A C++ application that manages student and course data, handles enrollment operations and provides administrative tools for university course management. The project demonstrates the
 use of Standard Template Library (STL) containers and object-oriented design in a real-world application.
+
+[Github Repository](https://github.com/filexc/University-Course-Management-System)
 
 ## Compilation & Running
 
