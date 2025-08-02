@@ -1,0 +1,405 @@
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ make
+g++ -std=c++17 -Wall -o university_system main.cpp Student.cpp Course.cpp UniversitySystem.cpp
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ ./university_system
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 20
+
+=== DEMO MODE - Testing All Features ===
+
+1. Adding students...
+
+2. Adding courses...
+
+3. Enrolling students in courses...
+
+4. Testing waitlist functionality...
+Added student to waitlist
+
+5. Displaying results...
+
+=== All Students ===
+ID: S001 | Name: Alice Johnson | Enrolled: 2 courses
+ID: S002 | Name: Bob Smith | Enrolled: 2 courses
+ID: S003 | Name: Carol Davis | Enrolled: 2 courses
+ID: S004 | Name: David Wilson | Enrolled: 1 courses
+ID: S005 | Name: Eva Brown | Enrolled: 3 courses
+ID: S006 | Name: Student6 | Enrolled: 1 courses
+ID: S007 | Name: Student7 | Enrolled: 1 courses
+ID: S008 | Name: Student8 | Enrolled: 1 courses
+ID: S009 | Name: Student9 | Enrolled: 1 courses
+ID: S010 | Name: Student10 | Enrolled: 1 courses
+ID: S011 | Name: Student11 | Enrolled: 1 courses
+ID: S012 | Name: Student12 | Enrolled: 1 courses
+ID: S013 | Name: Student13 | Enrolled: 1 courses
+ID: S014 | Name: Student14 | Enrolled: 1 courses
+ID: S015 | Name: Student15 | Enrolled: 1 courses
+ID: S016 | Name: Student16 | Enrolled: 1 courses
+ID: S017 | Name: Student17 | Enrolled: 1 courses
+ID: S018 | Name: Student18 | Enrolled: 1 courses
+ID: S019 | Name: Student19 | Enrolled: 1 courses
+ID: S020 | Name: Student20 | Enrolled: 0 courses
+
+=== All Courses ===
+Code: CS101 | Title: Introduction to Computer Science | Instructor: Dr. Smith | Enrollment: 3/25 | Waitlist: 0
+Code: ENG101 | Title: English Composition | Instructor: Dr. Davis | Enrollment: 2/20 | Waitlist: 0
+Code: HIST101 | Title: World History | Instructor: Dr. Brown | Enrollment: 1/35 | Waitlist: 0
+Code: MATH201 | Title: Calculus I | Instructor: Dr. Johnson | Enrollment: 3/30 | Waitlist: 0
+Code: PHYS101 | Title: Physics I | Instructor: Dr. Wilson | Enrollment: 15/15 | Waitlist: 1
+
+=== System Statistics ===
+Total Students: 20
+Total Courses: 5
+Total Enrollments: 24
+Total Activities Logged: 49
+Average Enrollments per Course: 4.80
+
+6. Testing search operations...
+Found student: S001
+Found course: CS101
+
+7. Testing instructor search...
+Students taught by Dr. Smith:
+  S001 - Alice Johnson
+  S002 - Bob Smith
+  S005 - Eva Brown
+
+8. Testing administrative tools...
+
+=== Courses for Carol Davis (ID: S003) ===
+Enrolled Courses: 
+ - MATH201
+ - PHYS101
+
+=== Students for Physics I (Code: PHYS101) ===
+Enrolled Students (15):
+ - S003
+ - S006
+ - S007
+ - S008
+ - S009
+ - S010
+ - S011
+ - S012
+ - S013
+ - S014
+ - S015
+ - S016
+ - S017
+ - S018
+ - S019
+Waitlist (1):
+ 1. S020
+
+9. Testing activity log...
+
+=== Recent Activities (Last 10) ===
+[2025-08-01 21:&M:11] ENROLL - Student: S015 - Course: PHYS101 - Enrolled Student15 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S016 - Added student: Student16
+[2025-08-01 21:&M:11] ENROLL - Student: S016 - Course: PHYS101 - Enrolled Student16 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S017 - Added student: Student17
+[2025-08-01 21:&M:11] ENROLL - Student: S017 - Course: PHYS101 - Enrolled Student17 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S018 - Added student: Student18
+[2025-08-01 21:&M:11] ENROLL - Student: S018 - Course: PHYS101 - Enrolled Student18 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S019 - Added student: Student19
+[2025-08-01 21:&M:11] ENROLL - Student: S019 - Course: PHYS101 - Enrolled Student19 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S020 - Added student: Student20
+
+10. Testing drop functionality...
+
+=== Courses for Carol Davis (ID: S003) ===
+Enrolled Courses: 
+ - MATH201
+
+11. Testing updated waitlist functionality...
+
+=== Students for Physics I (Code: PHYS101) ===
+Enrolled Students (15):
+ - S006
+ - S007
+ - S008
+ - S009
+ - S010
+ - S011
+ - S012
+ - S013
+ - S014
+ - S015
+ - S016
+ - S017
+ - S018
+ - S019
+ - S020
+No students on waitlist
+
+=== DEMO COMPLETE ===
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 21
+Thanks for using the University Course Management System!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ make
+g++ -std=c++17 -Wall -o university_system main.cpp Student.cpp Course.cpp UniversitySystem.cpp
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ ./university_system
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 20
+
+=== DEMO MODE - Testing All Features ===
+
+1. Adding students...
+
+2. Adding courses...
+
+3. Enrolling students in courses...
+
+4. Testing waitlist functionality...
+Added student to waitlist
+
+5. Displaying results...
+
+=== All Students ===
+ID: S001 | Name: Alice Johnson | Enrolled: 2 courses
+ID: S002 | Name: Bob Smith | Enrolled: 2 courses
+ID: S003 | Name: Carol Davis | Enrolled: 2 courses
+ID: S004 | Name: David Wilson | Enrolled: 1 courses
+ID: S005 | Name: Eva Brown | Enrolled: 3 courses
+ID: S006 | Name: Student6 | Enrolled: 1 courses
+ID: S007 | Name: Student7 | Enrolled: 1 courses
+ID: S008 | Name: Student8 | Enrolled: 1 courses
+ID: S009 | Name: Student9 | Enrolled: 1 courses
+ID: S010 | Name: Student10 | Enrolled: 1 courses
+ID: S011 | Name: Student11 | Enrolled: 1 courses
+ID: S012 | Name: Student12 | Enrolled: 1 courses
+ID: S013 | Name: Student13 | Enrolled: 1 courses
+ID: S014 | Name: Student14 | Enrolled: 1 courses
+ID: S015 | Name: Student15 | Enrolled: 1 courses
+ID: S016 | Name: Student16 | Enrolled: 1 courses
+ID: S017 | Name: Student17 | Enrolled: 1 courses
+ID: S018 | Name: Student18 | Enrolled: 1 courses
+ID: S019 | Name: Student19 | Enrolled: 1 courses
+ID: S020 | Name: Student20 | Enrolled: 0 courses
+
+=== All Courses ===
+Code: CS101 | Title: Introduction to Computer Science | Instructor: Dr. Smith | Enrollment: 3/25 | Waitlist: 0
+Code: ENG101 | Title: English Composition | Instructor: Dr. Davis | Enrollment: 2/20 | Waitlist: 0
+Code: HIST101 | Title: World History | Instructor: Dr. Brown | Enrollment: 1/35 | Waitlist: 0
+Code: MATH201 | Title: Calculus I | Instructor: Dr. Johnson | Enrollment: 3/30 | Waitlist: 0
+Code: PHYS101 | Title: Physics I | Instructor: Dr. Wilson | Enrollment: 15/15 | Waitlist: 1
+
+=== System Statistics ===
+Total Students: 20
+Total Courses: 5
+Total Enrollments: 24
+Total Activities Logged: 49
+Average Enrollments per Course: 4.80
+
+6. Testing search operations...
+Found student: S001
+Found course: CS101
+
+7. Testing instructor search...
+Students taught by Dr. Smith:
+  S001 - Alice Johnson
+  S002 - Bob Smith
+  S005 - Eva Brown
+
+8. Testing administrative tools...
+
+=== Courses for Carol Davis (ID: S003) ===
+Enrolled Courses: 
+ - MATH201
+ - PHYS101
+
+=== Students for Physics I (Code: PHYS101) ===
+Enrolled Students (15):
+ - S003
+ - S006
+ - S007
+ - S008
+ - S009
+ - S010
+ - S011
+ - S012
+ - S013
+ - S014
+ - S015
+ - S016
+ - S017
+ - S018
+ - S019
+Waitlist (1):
+ 1. S020
+
+9. Testing activity log...
+
+=== Recent Activities (Last 10) ===
+[2025-08-01 21:&M:11] ENROLL - Student: S015 - Course: PHYS101 - Enrolled Student15 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S016 - Added student: Student16
+[2025-08-01 21:&M:11] ENROLL - Student: S016 - Course: PHYS101 - Enrolled Student16 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S017 - Added student: Student17
+[2025-08-01 21:&M:11] ENROLL - Student: S017 - Course: PHYS101 - Enrolled Student17 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S018 - Added student: Student18
+[2025-08-01 21:&M:11] ENROLL - Student: S018 - Course: PHYS101 - Enrolled Student18 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S019 - Added student: Student19
+[2025-08-01 21:&M:11] ENROLL - Student: S019 - Course: PHYS101 - Enrolled Student19 in Physics I
+[2025-08-01 21:&M:11] ADD STUDENT - Student: S020 - Added student: Student20
+
+10. Testing drop functionality...
+
+=== Courses for Carol Davis (ID: S003) ===
+Enrolled Courses: 
+ - MATH201
+
+11. Testing updated waitlist functionality...
+
+=== Students for Physics I (Code: PHYS101) ===
+Enrolled Students (15):
+ - S006
+ - S007
+ - S008
+ - S009
+ - S010
+ - S011
+ - S012
+ - S013
+ - S014
+ - S015
+ - S016
+ - S017
+ - S018
+ - S019
+ - S020
+No students on waitlist
+
+=== DEMO COMPLETE ===
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 21
+Thanks for using the University Course Management System!
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ 

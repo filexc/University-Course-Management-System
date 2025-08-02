@@ -42,6 +42,8 @@
 		8125051D2E3D9CE3009C5331 /* University Course Management System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "University Course Management System"; path = "/Users/violetchaffee/Desktop/University-Course-Management-System/build/Debug/University Course Management System"; sourceTree = "<absolute>"; };
 		8125051E2E3D9CF7009C5331 /* DESIGN_DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_DECISIONS.md; sourceTree = "<group>"; };
 		8125051F2E3D9CF7009C5331 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		812505202E3DCAFB009C5331 /* Output Log 1 -- SystemDemo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Output Log 1 -- SystemDemo.txt"; sourceTree = "<group>"; };
+		812505212E3DCAFB009C5331 /* Output Log 2 -- ManualTests with File Loading.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Output Log 2 -- ManualTests with File Loading.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,8 @@
 			children = (
 				8125051E2E3D9CF7009C5331 /* DESIGN_DECISIONS.md */,
 				8125051F2E3D9CF7009C5331 /* README.md */,
+				812505202E3DCAFB009C5331 /* Output Log 1 -- SystemDemo.txt */,
+				812505212E3DCAFB009C5331 /* Output Log 2 -- ManualTests with File Loading.txt */,
 				8125050F2E3D7672009C5331 /* UniversityCourseManagementSystem */,
 			);
 			sourceTree = "<group>";

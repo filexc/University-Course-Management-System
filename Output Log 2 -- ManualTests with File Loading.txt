@@ -1,0 +1,923 @@
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ make
+make: `university_system' is up to date.
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ make run
+./university_system
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 19
+Enter filename to load from: test_data1.txt
+Loading data from test_data1.txt...
+Load complete:
+  Students loaded: 10
+  Courses loaded: 10
+  Enrollments loaded: 20
+Data loaded successfully from test_data1.txt
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 12
+
+=== System Statistics ===
+Total Students: 10
+Total Courses: 10
+Total Enrollments: 20
+Total Activities Logged: 41
+Average Enrollments per Course: 2.00
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 8
+
+=== All Courses ===
+Code: ART101 | Title: Introduction to Art | Instructor: Dr. Garcia | Enrollment: 1/40 | Waitlist: 0
+Code: CS101 | Title: Introduction to Computer Science | Instructor: Dr. Smith | Enrollment: 4/25 | Waitlist: 0
+Code: CS201 | Title: Data Structures | Instructor: Dr. Smith | Enrollment: 1/20 | Waitlist: 0
+Code: ENG101 | Title: English Composition | Instructor: Dr. Davis | Enrollment: 3/20 | Waitlist: 0
+Code: ENG201 | Title: Advanced Writing | Instructor: Dr. Davis | Enrollment: 1/18 | Waitlist: 0
+Code: HIST101 | Title: World History | Instructor: Dr. Brown | Enrollment: 2/35 | Waitlist: 0
+Code: MATH201 | Title: Calculus I | Instructor: Dr. Johnson | Enrollment: 4/30 | Waitlist: 0
+Code: MATH202 | Title: Calculus II | Instructor: Dr. Johnson | Enrollment: 1/25 | Waitlist: 0
+Code: PHYS101 | Title: Physics I | Instructor: Dr. Wilson | Enrollment: 2/15 | Waitlist: 0
+Code: PHYS102 | Title: Physics II | Instructor: Dr. Wilson | Enrollment: 1/12 | Waitlist: 0
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 19
+Enter filename to load from: test_data2.txt
+Loading data from test_data2.txt...
+Added student to waitlist
+Warning: Could not enroll student S021 in course PHYS501 (line 61)
+Added student to waitlist
+Warning: Could not enroll student S022 in course PHYS501 (line 63)
+Added student to waitlist
+Warning: Could not enroll student S023 in course PHYS501 (line 65)
+Added student to waitlist
+Warning: Could not enroll student S024 in course PHYS501 (line 67)
+Added student to waitlist
+Warning: Could not enroll student S025 in course PHYS501 (line 69)
+Load complete:
+  Students loaded: 15
+  Courses loaded: 12
+  Enrollments loaded: 40
+Data loaded successfully from test_data2.txt
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 8
+
+=== All Courses ===
+Code: ART101 | Title: Introduction to Art | Instructor: Dr. Garcia | Enrollment: 1/40 | Waitlist: 0
+Code: CS101 | Title: Introduction to Computer Science | Instructor: Dr. Smith | Enrollment: 4/25 | Waitlist: 0
+Code: CS201 | Title: Data Structures | Instructor: Dr. Smith | Enrollment: 1/20 | Waitlist: 0
+Code: CS501 | Title: Machine Learning | Instructor: Dr. Mitchell | Enrollment: 3/20 | Waitlist: 0
+Code: CS502 | Title: Artificial Intelligence | Instructor: Dr. Wilson | Enrollment: 3/18 | Waitlist: 0
+Code: CS503 | Title: Computer Vision | Instructor: Dr. Gonzalez | Enrollment: 3/15 | Waitlist: 0
+Code: CS504 | Title: Natural Language Processing | Instructor: Dr. Chen | Enrollment: 3/12 | Waitlist: 0
+Code: CS505 | Title: Robotics | Instructor: Dr. Davis | Enrollment: 1/10 | Waitlist: 0
+Code: ENG101 | Title: English Composition | Instructor: Dr. Davis | Enrollment: 3/20 | Waitlist: 0
+Code: ENG201 | Title: Advanced Writing | Instructor: Dr. Davis | Enrollment: 1/18 | Waitlist: 0
+Code: ENG501 | Title: Advanced Literature | Instructor: Dr. Green | Enrollment: 4/18 | Waitlist: 0
+Code: ENG502 | Title: Research Methods | Instructor: Dr. White | Enrollment: 2/15 | Waitlist: 0
+Code: HIST101 | Title: World History | Instructor: Dr. Brown | Enrollment: 2/35 | Waitlist: 0
+Code: MATH201 | Title: Calculus I | Instructor: Dr. Johnson | Enrollment: 4/30 | Waitlist: 0
+Code: MATH202 | Title: Calculus II | Instructor: Dr. Johnson | Enrollment: 1/25 | Waitlist: 0
+Code: MATH501 | Title: Advanced Calculus | Instructor: Dr. Brown | Enrollment: 4/25 | Waitlist: 0
+Code: MATH502 | Title: Abstract Algebra | Instructor: Dr. Johnson | Enrollment: 3/20 | Waitlist: 0
+Code: MATH503 | Title: Topology | Instructor: Dr. Lee | Enrollment: 2/15 | Waitlist: 0
+Code: PHYS101 | Title: Physics I | Instructor: Dr. Wilson | Enrollment: 2/15 | Waitlist: 0
+Code: PHYS102 | Title: Physics II | Instructor: Dr. Wilson | Enrollment: 1/12 | Waitlist: 0
+Code: PHYS501 | Title: Advanced Quantum Physics | Instructor: Dr. Smith | Enrollment: 8/8 | Waitlist: 5
+Code: PHYS502 | Title: Relativity Theory | Instructor: Dr. Anderson | Enrollment: 4/12 | Waitlist: 0
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 7
+
+=== All Students ===
+ID: S001 | Name: Alice Johnson | Enrolled: 2 courses
+ID: S002 | Name: Bob Smith | Enrolled: 2 courses
+ID: S003 | Name: Carol Davis | Enrolled: 2 courses
+ID: S004 | Name: David Wilson | Enrolled: 1 courses
+ID: S005 | Name: Eva Brown | Enrolled: 3 courses
+ID: S006 | Name: Frank Miller | Enrolled: 2 courses
+ID: S007 | Name: Grace Lee | Enrolled: 2 courses
+ID: S008 | Name: Henry Taylor | Enrolled: 2 courses
+ID: S009 | Name: Iris Garcia | Enrolled: 2 courses
+ID: S010 | Name: Jack Anderson | Enrolled: 2 courses
+ID: S011 | Name: Sarah Mitchell | Enrolled: 3 courses
+ID: S012 | Name: James Wilson | Enrolled: 3 courses
+ID: S013 | Name: Maria Gonzalez | Enrolled: 3 courses
+ID: S014 | Name: Robert Chen | Enrolled: 3 courses
+ID: S015 | Name: Emily Davis | Enrolled: 3 courses
+ID: S016 | Name: Michael Brown | Enrolled: 3 courses
+ID: S017 | Name: Lisa Johnson | Enrolled: 3 courses
+ID: S018 | Name: David Lee | Enrolled: 3 courses
+ID: S019 | Name: Anna Smith | Enrolled: 3 courses
+ID: S020 | Name: Thomas Anderson | Enrolled: 3 courses
+ID: S021 | Name: Rachel Green | Enrolled: 2 courses
+ID: S022 | Name: Christopher White | Enrolled: 2 courses
+ID: S023 | Name: Jennifer Taylor | Enrolled: 2 courses
+ID: S024 | Name: Daniel Martinez | Enrolled: 2 courses
+ID: S025 | Name: Amanda Clark | Enrolled: 2 courses
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 10
+Enter course title: PHYS101
+Course not found
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 5
+Enter student ID: S025
+
+=== Courses for Amanda Clark (ID: S025) ===
+Enrolled Courses: 
+ - CS504
+ - MATH502
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 4
+Enter student ID: S025
+Enter course code: CS504
+Student dropped successfully!
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 6
+Enter course code: S025
+course not found
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 5
+Enter student ID: S025
+
+=== Courses for Amanda Clark (ID: S025) ===
+Enrolled Courses: 
+ - MATH502
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 13
+
+=== Activity Log ===
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S001 - Added student: Alice Johnson
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S002 - Added student: Bob Smith
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S003 - Added student: Carol Davis
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S004 - Added student: David Wilson
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S005 - Added student: Eva Brown
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S006 - Added student: Frank Miller
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S007 - Added student: Grace Lee
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S008 - Added student: Henry Taylor
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S009 - Added student: Iris Garcia
+[2025-08-01 21:&M:59] ADD STUDENT - Student: S010 - Added student: Jack Anderson
+[2025-08-01 21:&M:59] ADD COURSE - Course: CS101 - Added course: Introduction to Computer Science by Dr. Smith
+[2025-08-01 21:&M:59] ADD COURSE - Course: MATH201 - Added course: Calculus I by Dr. Johnson
+[2025-08-01 21:&M:59] ADD COURSE - Course: ENG101 - Added course: English Composition by Dr. Davis
+[2025-08-01 21:&M:59] ADD COURSE - Course: PHYS101 - Added course: Physics I by Dr. Wilson
+[2025-08-01 21:&M:59] ADD COURSE - Course: HIST101 - Added course: World History by Dr. Brown
+[2025-08-01 21:&M:59] ADD COURSE - Course: CS201 - Added course: Data Structures by Dr. Smith
+[2025-08-01 21:&M:59] ADD COURSE - Course: MATH202 - Added course: Calculus II by Dr. Johnson
+[2025-08-01 21:&M:59] ADD COURSE - Course: ENG201 - Added course: Advanced Writing by Dr. Davis
+[2025-08-01 21:&M:59] ADD COURSE - Course: PHYS102 - Added course: Physics II by Dr. Wilson
+[2025-08-01 21:&M:59] ADD COURSE - Course: ART101 - Added course: Introduction to Art by Dr. Garcia
+[2025-08-01 21:&M:59] ENROLL - Student: S001 - Course: CS101 - Enrolled Alice Johnson in Introduction to Computer Science
+[2025-08-01 21:&M:59] ENROLL - Student: S001 - Course: MATH201 - Enrolled Alice Johnson in Calculus I
+[2025-08-01 21:&M:59] ENROLL - Student: S002 - Course: CS101 - Enrolled Bob Smith in Introduction to Computer Science
+[2025-08-01 21:&M:59] ENROLL - Student: S002 - Course: ENG101 - Enrolled Bob Smith in English Composition
+[2025-08-01 21:&M:59] ENROLL - Student: S003 - Course: MATH201 - Enrolled Carol Davis in Calculus I
+[2025-08-01 21:&M:59] ENROLL - Student: S003 - Course: PHYS101 - Enrolled Carol Davis in Physics I
+[2025-08-01 21:&M:59] ENROLL - Student: S004 - Course: HIST101 - Enrolled David Wilson in World History
+[2025-08-01 21:&M:59] ENROLL - Student: S005 - Course: CS101 - Enrolled Eva Brown in Introduction to Computer Science
+[2025-08-01 21:&M:59] ENROLL - Student: S005 - Course: MATH201 - Enrolled Eva Brown in Calculus I
+[2025-08-01 21:&M:59] ENROLL - Student: S005 - Course: ENG101 - Enrolled Eva Brown in English Composition
+[2025-08-01 21:&M:59] ENROLL - Student: S006 - Course: CS201 - Enrolled Frank Miller in Data Structures
+[2025-08-01 21:&M:59] ENROLL - Student: S006 - Course: PHYS101 - Enrolled Frank Miller in Physics I
+[2025-08-01 21:&M:59] ENROLL - Student: S007 - Course: ENG201 - Enrolled Grace Lee in Advanced Writing
+[2025-08-01 21:&M:59] ENROLL - Student: S007 - Course: ART101 - Enrolled Grace Lee in Introduction to Art
+[2025-08-01 21:&M:59] ENROLL - Student: S008 - Course: MATH202 - Enrolled Henry Taylor in Calculus II
+[2025-08-01 21:&M:59] ENROLL - Student: S008 - Course: HIST101 - Enrolled Henry Taylor in World History
+[2025-08-01 21:&M:59] ENROLL - Student: S009 - Course: CS101 - Enrolled Iris Garcia in Introduction to Computer Science
+[2025-08-01 21:&M:59] ENROLL - Student: S009 - Course: PHYS102 - Enrolled Iris Garcia in Physics II
+[2025-08-01 21:&M:59] ENROLL - Student: S010 - Course: MATH201 - Enrolled Jack Anderson in Calculus I
+[2025-08-01 21:&M:59] ENROLL - Student: S010 - Course: ENG101 - Enrolled Jack Anderson in English Composition
+[2025-08-01 21:&M:59] LOAD_FILE - Loaded 10 students, 10 courses, 20 enrollments from test_data1.txt
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S011 - Added student: Sarah Mitchell
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S012 - Added student: James Wilson
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S013 - Added student: Maria Gonzalez
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S014 - Added student: Robert Chen
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S015 - Added student: Emily Davis
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S016 - Added student: Michael Brown
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S017 - Added student: Lisa Johnson
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S018 - Added student: David Lee
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S019 - Added student: Anna Smith
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S020 - Added student: Thomas Anderson
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S021 - Added student: Rachel Green
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S022 - Added student: Christopher White
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S023 - Added student: Jennifer Taylor
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S024 - Added student: Daniel Martinez
+[2025-08-01 21:&M:28] ADD STUDENT - Student: S025 - Added student: Amanda Clark
+[2025-08-01 21:&M:28] ADD COURSE - Course: CS501 - Added course: Machine Learning by Dr. Mitchell
+[2025-08-01 21:&M:28] ADD COURSE - Course: CS502 - Added course: Artificial Intelligence by Dr. Wilson
+[2025-08-01 21:&M:28] ADD COURSE - Course: CS503 - Added course: Computer Vision by Dr. Gonzalez
+[2025-08-01 21:&M:28] ADD COURSE - Course: CS504 - Added course: Natural Language Processing by Dr. Chen
+[2025-08-01 21:&M:28] ADD COURSE - Course: CS505 - Added course: Robotics by Dr. Davis
+[2025-08-01 21:&M:28] ADD COURSE - Course: MATH501 - Added course: Advanced Calculus by Dr. Brown
+[2025-08-01 21:&M:28] ADD COURSE - Course: MATH502 - Added course: Abstract Algebra by Dr. Johnson
+[2025-08-01 21:&M:28] ADD COURSE - Course: MATH503 - Added course: Topology by Dr. Lee
+[2025-08-01 21:&M:28] ADD COURSE - Course: PHYS501 - Added course: Advanced Quantum Physics by Dr. Smith
+[2025-08-01 21:&M:28] ADD COURSE - Course: PHYS502 - Added course: Relativity Theory by Dr. Anderson
+[2025-08-01 21:&M:28] ADD COURSE - Course: ENG501 - Added course: Advanced Literature by Dr. Green
+[2025-08-01 21:&M:28] ADD COURSE - Course: ENG502 - Added course: Research Methods by Dr. White
+[2025-08-01 21:&M:28] ENROLL - Student: S011 - Course: CS501 - Enrolled Sarah Mitchell in Machine Learning
+[2025-08-01 21:&M:28] ENROLL - Student: S011 - Course: MATH501 - Enrolled Sarah Mitchell in Advanced Calculus
+[2025-08-01 21:&M:28] ENROLL - Student: S012 - Course: CS502 - Enrolled James Wilson in Artificial Intelligence
+[2025-08-01 21:&M:28] ENROLL - Student: S012 - Course: PHYS501 - Enrolled James Wilson in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S013 - Course: CS503 - Enrolled Maria Gonzalez in Computer Vision
+[2025-08-01 21:&M:28] ENROLL - Student: S013 - Course: ENG501 - Enrolled Maria Gonzalez in Advanced Literature
+[2025-08-01 21:&M:28] ENROLL - Student: S014 - Course: CS504 - Enrolled Robert Chen in Natural Language Processing
+[2025-08-01 21:&M:28] ENROLL - Student: S014 - Course: PHYS501 - Enrolled Robert Chen in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S015 - Course: CS505 - Enrolled Emily Davis in Robotics
+[2025-08-01 21:&M:28] ENROLL - Student: S015 - Course: PHYS501 - Enrolled Emily Davis in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S016 - Course: MATH501 - Enrolled Michael Brown in Advanced Calculus
+[2025-08-01 21:&M:28] ENROLL - Student: S016 - Course: PHYS501 - Enrolled Michael Brown in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S017 - Course: MATH502 - Enrolled Lisa Johnson in Abstract Algebra
+[2025-08-01 21:&M:28] ENROLL - Student: S017 - Course: PHYS501 - Enrolled Lisa Johnson in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S018 - Course: MATH503 - Enrolled David Lee in Topology
+[2025-08-01 21:&M:28] ENROLL - Student: S018 - Course: PHYS501 - Enrolled David Lee in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S019 - Course: PHYS502 - Enrolled Anna Smith in Relativity Theory
+[2025-08-01 21:&M:28] ENROLL - Student: S019 - Course: PHYS501 - Enrolled Anna Smith in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S020 - Course: ENG501 - Enrolled Thomas Anderson in Advanced Literature
+[2025-08-01 21:&M:28] ENROLL - Student: S020 - Course: PHYS501 - Enrolled Thomas Anderson in Advanced Quantum Physics
+[2025-08-01 21:&M:28] ENROLL - Student: S021 - Course: ENG502 - Enrolled Rachel Green in Research Methods
+[2025-08-01 21:&M:28] ENROLL - Student: S022 - Course: CS501 - Enrolled Christopher White in Machine Learning
+[2025-08-01 21:&M:28] ENROLL - Student: S023 - Course: CS502 - Enrolled Jennifer Taylor in Artificial Intelligence
+[2025-08-01 21:&M:28] ENROLL - Student: S024 - Course: CS503 - Enrolled Daniel Martinez in Computer Vision
+[2025-08-01 21:&M:28] ENROLL - Student: S025 - Course: CS504 - Enrolled Amanda Clark in Natural Language Processing
+[2025-08-01 21:&M:28] ENROLL - Student: S011 - Course: CS502 - Enrolled Sarah Mitchell in Artificial Intelligence
+[2025-08-01 21:&M:28] ENROLL - Student: S012 - Course: MATH501 - Enrolled James Wilson in Advanced Calculus
+[2025-08-01 21:&M:28] ENROLL - Student: S013 - Course: PHYS502 - Enrolled Maria Gonzalez in Relativity Theory
+[2025-08-01 21:&M:28] ENROLL - Student: S014 - Course: ENG501 - Enrolled Robert Chen in Advanced Literature
+[2025-08-01 21:&M:28] ENROLL - Student: S015 - Course: MATH502 - Enrolled Emily Davis in Abstract Algebra
+[2025-08-01 21:&M:28] ENROLL - Student: S016 - Course: CS501 - Enrolled Michael Brown in Machine Learning
+[2025-08-01 21:&M:28] ENROLL - Student: S017 - Course: ENG502 - Enrolled Lisa Johnson in Research Methods
+[2025-08-01 21:&M:28] ENROLL - Student: S018 - Course: PHYS502 - Enrolled David Lee in Relativity Theory
+[2025-08-01 21:&M:28] ENROLL - Student: S019 - Course: CS503 - Enrolled Anna Smith in Computer Vision
+[2025-08-01 21:&M:28] ENROLL - Student: S020 - Course: MATH503 - Enrolled Thomas Anderson in Topology
+[2025-08-01 21:&M:28] ENROLL - Student: S021 - Course: CS504 - Enrolled Rachel Green in Natural Language Processing
+[2025-08-01 21:&M:28] ENROLL - Student: S022 - Course: MATH501 - Enrolled Christopher White in Advanced Calculus
+[2025-08-01 21:&M:28] ENROLL - Student: S023 - Course: PHYS502 - Enrolled Jennifer Taylor in Relativity Theory
+[2025-08-01 21:&M:28] ENROLL - Student: S024 - Course: ENG501 - Enrolled Daniel Martinez in Advanced Literature
+[2025-08-01 21:&M:28] ENROLL - Student: S025 - Course: MATH502 - Enrolled Amanda Clark in Abstract Algebra
+[2025-08-01 21:&M:28] LOAD_FILE - Loaded 15 students, 12 courses, 40 enrollments from test_data2.txt
+[2025-08-01 21:&M:41] DROP - Student: S025 - Course: CS504 - Dropped Amanda Clark from Natural Language Processing
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 17
+Enter student ID: S025
+Enter new name: Amanda Brown
+Student updated successfully!
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 6
+Enter course code: PHYS501
+
+=== Students for Advanced Quantum Physics (Code: PHYS501) ===
+Enrolled Students (8):
+ - S012
+ - S014
+ - S015
+ - S016
+ - S017
+ - S018
+ - S019
+ - S020
+Waitlist (5):
+ 1. S021
+ 2. S022
+ 3. S023
+ 4. S024
+ 5. S025
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 4
+Enter student ID: S012
+Enter course code: PHYS501
+Student dropped successfully!
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 6
+Enter course code: PHYS501
+
+=== Students for Advanced Quantum Physics (Code: PHYS501) ===
+Enrolled Students (8):
+ - S014
+ - S015
+ - S016
+ - S017
+ - S018
+ - S019
+ - S020
+ - S021
+Waitlist (4):
+ 1. S022
+ 2. S023
+ 3. S024
+ 4. S025
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 16
+Enter course code to remove: PHYS501
+Course removed successfully!
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 12
+
+=== System Statistics ===
+Total Students: 25
+Total Courses: 21
+Total Enrollments: 51
+Total Activities Logged: 113
+Average Enrollments per Course: 2.43
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 8
+
+=== All Courses ===
+Code: ART101 | Title: Introduction to Art | Instructor: Dr. Garcia | Enrollment: 1/40 | Waitlist: 0
+Code: CS101 | Title: Introduction to Computer Science | Instructor: Dr. Smith | Enrollment: 4/25 | Waitlist: 0
+Code: CS201 | Title: Data Structures | Instructor: Dr. Smith | Enrollment: 1/20 | Waitlist: 0
+Code: CS501 | Title: Machine Learning | Instructor: Dr. Mitchell | Enrollment: 3/20 | Waitlist: 0
+Code: CS502 | Title: Artificial Intelligence | Instructor: Dr. Wilson | Enrollment: 3/18 | Waitlist: 0
+Code: CS503 | Title: Computer Vision | Instructor: Dr. Gonzalez | Enrollment: 3/15 | Waitlist: 0
+Code: CS504 | Title: Natural Language Processing | Instructor: Dr. Chen | Enrollment: 2/12 | Waitlist: 0
+Code: CS505 | Title: Robotics | Instructor: Dr. Davis | Enrollment: 1/10 | Waitlist: 0
+Code: ENG101 | Title: English Composition | Instructor: Dr. Davis | Enrollment: 3/20 | Waitlist: 0
+Code: ENG201 | Title: Advanced Writing | Instructor: Dr. Davis | Enrollment: 1/18 | Waitlist: 0
+Code: ENG501 | Title: Advanced Literature | Instructor: Dr. Green | Enrollment: 4/18 | Waitlist: 0
+Code: ENG502 | Title: Research Methods | Instructor: Dr. White | Enrollment: 2/15 | Waitlist: 0
+Code: HIST101 | Title: World History | Instructor: Dr. Brown | Enrollment: 2/35 | Waitlist: 0
+Code: MATH201 | Title: Calculus I | Instructor: Dr. Johnson | Enrollment: 4/30 | Waitlist: 0
+Code: MATH202 | Title: Calculus II | Instructor: Dr. Johnson | Enrollment: 1/25 | Waitlist: 0
+Code: MATH501 | Title: Advanced Calculus | Instructor: Dr. Brown | Enrollment: 4/25 | Waitlist: 0
+Code: MATH502 | Title: Abstract Algebra | Instructor: Dr. Johnson | Enrollment: 3/20 | Waitlist: 0
+Code: MATH503 | Title: Topology | Instructor: Dr. Lee | Enrollment: 2/15 | Waitlist: 0
+Code: PHYS101 | Title: Physics I | Instructor: Dr. Wilson | Enrollment: 2/15 | Waitlist: 0
+Code: PHYS102 | Title: Physics II | Instructor: Dr. Wilson | Enrollment: 1/12 | Waitlist: 0
+Code: PHYS502 | Title: Relativity Theory | Instructor: Dr. Anderson | Enrollment: 4/12 | Waitlist: 0
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 7
+
+=== All Students ===
+ID: S001 | Name: Alice Johnson | Enrolled: 2 courses
+ID: S002 | Name: Bob Smith | Enrolled: 2 courses
+ID: S003 | Name: Carol Davis | Enrolled: 2 courses
+ID: S004 | Name: David Wilson | Enrolled: 1 courses
+ID: S005 | Name: Eva Brown | Enrolled: 3 courses
+ID: S006 | Name: Frank Miller | Enrolled: 2 courses
+ID: S007 | Name: Grace Lee | Enrolled: 2 courses
+ID: S008 | Name: Henry Taylor | Enrolled: 2 courses
+ID: S009 | Name: Iris Garcia | Enrolled: 2 courses
+ID: S010 | Name: Jack Anderson | Enrolled: 2 courses
+ID: S011 | Name: Sarah Mitchell | Enrolled: 3 courses
+ID: S012 | Name: James Wilson | Enrolled: 2 courses
+ID: S013 | Name: Maria Gonzalez | Enrolled: 3 courses
+ID: S014 | Name: Robert Chen | Enrolled: 2 courses
+ID: S015 | Name: Emily Davis | Enrolled: 2 courses
+ID: S016 | Name: Michael Brown | Enrolled: 2 courses
+ID: S017 | Name: Lisa Johnson | Enrolled: 2 courses
+ID: S018 | Name: David Lee | Enrolled: 2 courses
+ID: S019 | Name: Anna Smith | Enrolled: 2 courses
+ID: S020 | Name: Thomas Anderson | Enrolled: 2 courses
+ID: S021 | Name: Rachel Green | Enrolled: 2 courses
+ID: S022 | Name: Christopher White | Enrolled: 2 courses
+ID: S023 | Name: Jennifer Taylor | Enrolled: 2 courses
+ID: S024 | Name: Daniel Martinez | Enrolled: 2 courses
+ID: S025 | Name: Amanda Brown | Enrolled: 1 courses
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 5
+Enter student ID: S013
+
+=== Courses for Maria Gonzalez (ID: S013) ===
+Enrolled Courses: 
+ - CS503
+ - ENG501
+ - PHYS502
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 15
+Enter student ID to remove: S013
+Student removed successfully!
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 6
+Enter course code: ENG501
+
+=== Students for Advanced Literature (Code: ENG501) ===
+Enrolled Students (3):
+ - S014
+ - S020
+ - S024
+No students on waitlist
+
+=== University Course Management System ===
+1. Add Student
+2. Add Course
+3. Enroll Student in Course
+4. Drop Student from Course
+5. List Student's Courses
+6. List Course's Student
+7. Display All Students
+8. Display All Courses
+9. Search Student by Name
+10. Search Course by Title
+11. Get Students by Instructor
+12. Display System Statistics
+13. Display Activity Log
+14. Display Recent Activities
+15. Remove Student
+16. Remove Course
+17. Update Student
+18. Update Course
+19. Load Data from File
+20. Demo Mode (Run all features)
+21.  Exit
+Enter your choice: 21
+Thanks for using the University Course Management System!
+violets-mbp:UniversityCourseManagementSystem violetchaffee$ 
