@@ -33,7 +33,15 @@ private:
     deque<ActivityLogEntry> activityLog;
     
     string getCurrentTimestamp() const;
+    Student* getStudent(const string& studentID);
+    Course* getCourse(const string& courseCode);
+    int getTotalStudents() const;
+    int getTotalCourses() const;
+    int getTotalEnrollments() const;
+    
     void logActivity(const string& action, const string& studentID, const string& courseCode, const string& details);
+    bool studentExists(const string& studentID) const;
+    bool courseExists(const string& courseCode) const;
     
 public:
     UniversitySystem();
@@ -41,14 +49,10 @@ public:
     bool addStudent(const string& studentID, const string& fullName);
     bool removeStudent(const string& studentID);
     bool updateStudent(const string& studentID, const string& newName);
-    Student* getStudent(const string& studentID);
-    bool studentExists(const string& studentID) const;
-    
+        
     bool addCourse(const string& courseCode, const string& title, const string& instructor, int capacity = 30);
     bool removeCourse(const string& courseCode);
     bool updateCourse(const string& courseCode, const string& newTitle, const string& newInstructor, int newCapacity = -1);
-    Course* getCourse(const string& courseCode);
-    bool courseExists(const string& courseCode) const;
     
     bool enrollStudentInCourse(const string& studentID, const string& courseCode);
     bool dropStudentFromCourse(const string& studentID, const string& courseCode);
@@ -64,9 +68,6 @@ public:
     pair<bool, string> searchCourseByTitle(const string& title) const;
     map<string, string> getStudentsByInstructor(const string& instructor) const;
     
-    int getTotalStudents() const;
-    int getTotalCourses() const;
-    int getTotalEnrollments() const;
     void displaySystemStatistics() const;
     
     bool loadFromFile(const string& fileName);

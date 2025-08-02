@@ -30,10 +30,6 @@ set<string> Student::getEnrolledCourses() const {
     return enrolledCourses;
 }
 
-void Student::setStudentID(const string& ID) {
-    studentID = ID;
-}
-
 void Student::setFullName(const string& name) {
     fullName = name;
 }
@@ -54,18 +50,8 @@ void Student::dropCourse(const string& courseCode) {
     enrolledCourses.erase(courseCode);
 }
 
-bool Student::isEnrolledIn(const string& courseCode) const {
-    return enrolledCourses.find(courseCode) != enrolledCourses.end();
-}
-
 int Student::getEnrollmentCount() const {
     return enrolledCourses.size();
-}
-
-void Student::displayInfo() const {
-    cout << "Student ID: " << studentID << endl;
-    cout << "Full Name: " << fullName << endl;
-    cout << "Enrolled in " << getEnrollmentCount() << " course(s)" << endl;
 }
 
 void Student::displayEnrolledCourses() const {

@@ -26,15 +26,12 @@ public:
     string getFullName() const;
     set<string> getEnrolledCourses() const;
     
-    void setStudentID(const string& ID);
     void setFullName(const string& name);
     
     void enrollInCourse(const string& courseCode);
     void dropCourse(const string& courseCode);
-    bool isEnrolledIn(const string& courseCode) const;
     
     int getEnrollmentCount() const;
-    void displayInfo() const;
     void displayEnrolledCourses() const;
 };
 

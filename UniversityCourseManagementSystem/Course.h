@@ -23,6 +23,12 @@ private:
     queue<string> waitlist;
     int capacity;
     int currentEnrollment;
+    
+    bool isStudentEnrolled(const string& studentID) const;
+    bool addToWaitlist(const string& studentID);
+    string removeFromWaitlist();
+    
+    bool hasAvailableSeats() const;
 public:
     Course();
     Course(const string& code, const string& courseTitle, const string& instructor, int maxCapacity = 30);
@@ -35,20 +41,13 @@ public:
     int getCurrentEnrollment() const;
     int getWaitlistSize() const;
     
-    void setCourseCode(const string& code);
     void setTitle(const string& courseTitle);
     void setInstructorName(const string& instructor);
     void setCapacity(int maxCapacity);
     
     bool enrollStudent(const string& studentID);
     bool dropStudent(const string& studentID);
-    bool isStudentEnrolled(const string& studentID) const;
-    bool addToWaitlist(const string& studentID);
-    string removeFromWaitlist();
     
-    bool isFull() const;
-    bool hasAvailableSeats() const;
-    void displayInfo() const;
     void displayEnrolledStudents() const;
     void displayWaitlist() const;
 };

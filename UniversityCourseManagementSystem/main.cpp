@@ -269,7 +269,7 @@ int main(int argc, const char * argv[]) {
             }
             case 16: { // Remove Course
                 string courseCode = getStringInput("Enter course code to remove: ");
-                if (system.removeStudent(courseCode)) {
+                if (system.removeCourse(courseCode)) {
                     cout << "Course removed successfully!" << endl;
                 } else {
                     cout << "Failed to remove course. Course not found" << endl;

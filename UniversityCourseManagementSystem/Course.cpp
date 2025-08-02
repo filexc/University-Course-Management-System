@@ -52,10 +52,6 @@ int Course::getWaitlistSize() const {
     return waitlist.size();
 }
 
-void Course::setCourseCode(const string& code) {
-    courseCode = code;
-}
-
 void Course::setTitle(const string& courseTitle) {
     title = courseTitle;
 }
@@ -145,20 +141,8 @@ string Course::removeFromWaitlist() {
     return studentID;
 }
 
-bool Course::isFull() const {
-    return currentEnrollment >= capacity;
-}
-
 bool Course::hasAvailableSeats() const {
     return currentEnrollment < capacity;
-}
-
-void Course::displayInfo() const {
-    cout << "Course Code: " << courseCode << endl;
-    cout << "Title: " << title << endl;
-    cout << "Instructor: " << instructorName << endl;
-    cout << "Enrollment: " << currentEnrollment << "/" << capacity << endl;
-    cout << "Waitlist Size: " << getWaitlistSize() << endl;
 }
 
 void Course::displayEnrolledStudents() const {

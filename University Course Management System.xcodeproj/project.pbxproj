@@ -39,7 +39,7 @@
 		812505172E3D79A6009C5331 /* test_data2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data2.txt; sourceTree = "<group>"; };
 		812505182E3D7BCF009C5331 /* test_data3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data3.txt; sourceTree = "<group>"; };
 		812505192E3D7C9D009C5331 /* test_data4.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test_data4.txt; sourceTree = "<group>"; };
-		8125051D2E3D9CE3009C5331 /* University Course Management System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "University Course Management System"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8125051D2E3D9CE3009C5331 /* University Course Management System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "University Course Management System"; path = "/Users/violetchaffee/Desktop/University-Course-Management-System/build/Debug/University Course Management System"; sourceTree = "<absolute>"; };
 		8125051E2E3D9CF7009C5331 /* DESIGN_DECISIONS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DESIGN_DECISIONS.md; sourceTree = "<group>"; };
 		8125051F2E3D9CF7009C5331 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +61,6 @@
 				8125051E2E3D9CF7009C5331 /* DESIGN_DECISIONS.md */,
 				8125051F2E3D9CF7009C5331 /* README.md */,
 				8125050F2E3D7672009C5331 /* UniversityCourseManagementSystem */,
-				8125051D2E3D9CE3009C5331 /* University Course Management System */,
 			);
 			sourceTree = "<group>";
 		};
