@@ -13,6 +13,17 @@
 
 using namespace std;
 
+/**
+ @brief constructs an ActivityLogEntry with the specified details
+ 
+ @details initializes an activity log entry to track system operations like adding or removing students/courses
+ 
+ @param time the timestamp of the activity
+ @param a the action taken
+ @param ID the student ID involved in the action
+ @param cc the course code involved in the action
+ @param d additional details about the action
+ */
 ActivityLogEntry::ActivityLogEntry(const string& time, const string& a, const string& ID, const string& cc, const string& d) {
     timestamp = time;
     action = a;
@@ -21,8 +32,18 @@ ActivityLogEntry::ActivityLogEntry(const string& time, const string& a, const st
     details = d;
 }
 
+/**
+ @brief constructs a UniversitySystem object
+*/
 UniversitySystem::UniversitySystem() {}
 
+/**
+ @brief returns the current system time as a formatted string
+ 
+ @details uses the system clock to generate a timestamp in the format YYYY-MM-DD HH:MM:SS
+ 
+ @return (string) the current timestamp
+ */
 string UniversitySystem::getCurrentTimestamp() const {
     auto now = time(nullptr);
     auto tm = *localtime(&now);
@@ -31,11 +52,31 @@ string UniversitySystem::getCurrentTimestamp() const {
     return oss.str();
 }
 
+/**
+ @brief logs a system activity
+ 
+ @details creates an ActivityLogEntry and adds it to the log
+ 
+ @param action the type of activity performed
+ @param studentID the student involved with the activity
+ @param courseCode the course involved with the activity
+ @param details extra details about the activity
+ */
 void UniversitySystem::logActivity(const string& action, const string& studentID, const string& courseCode, const string& details) {
     string timestamp = getCurrentTimestamp();
     activityLog.emplace_back(timestamp, action, studentID, courseCode, details);
 }
 
+/**
+ @brief adds a new student to the system
+ 
+ @details fails if the student ID or name is empty or the student ID already exists
+ 
+ @param studentID the unique ID of the student
+ @param fullName the full name of the student
+ 
+ @return (bool) true if added successfully, false otherwise
+ */
 bool UniversitySystem::addStudent(const string& studentID, const string& fullName) {
     if (studentID.empty() || fullName.empty()) {
         cout << "one of the fields is blank -- cannot add a new student" << endl;
@@ -52,6 +93,15 @@ bool UniversitySystem::addStudent(const string& studentID, const string& fullNam
     return true;
 }
 
+/**
+ @brief removes a student from the system
+ 
+ @details also removes the student from any enrolled courses
+ 
+ @param studentID the ID of the student to remove
+ 
+ @return (bool) true if successfully removed, false if student not found
+ */
 bool UniversitySystem::removeStudent(const string& studentID) {
     auto iter = students.find(studentID);
     if (iter == students.end()) {
@@ -74,6 +124,16 @@ bool UniversitySystem::removeStudent(const string& studentID) {
     return true;
 }
 
+/**
+ @brief updates a student's name
+ 
+ @details if the student ID is valid, the name is updated
+ 
+ @param studentID the ID of the student
+ @param newName the new name to set for the student
+ 
+ @return (bool) true if updated, false otherwise
+ */
 bool UniversitySystem::updateStudent(const string& studentID, const string& newName) {
     auto iter = students.find(studentID);
     if (iter == students.end()) {
@@ -87,15 +147,41 @@ bool UniversitySystem::updateStudent(const string& studentID, const string& newN
     return true;
 }
 
+/**
+ @brief returns a pointer to the student object
+ 
+ @param studentID the ID of the student
+ 
+ @return (Student*) pointer to the student object or null pointer if not found
+ */
 Student* UniversitySystem::getStudent(const string& studentID) {
     auto iter = students.find(studentID);
     return (iter != students.end()) ? &(iter->second) : nullptr;
 }
 
+/**
+ @brief checks if a student exists
+ 
+ @param studentID the ID of the student
+ 
+ @return (bool) true if the student exists, false otherwise
+ */
 bool UniversitySystem::studentExists(const string& studentID) const {
     return students.find(studentID) != students.end();
 }
 
+/**
+ @brief adds a course to the system
+ 
+ @details validates that required fields are not empty and the course code does not already exist
+ 
+ @param courseCode the unique code for the course
+ @param title the title of the course
+ @param instructor the name of the instructor
+ @param capacity the maximum number of students allowed in the course
+ 
+ @return (bool) true if added successfully, false otherwise
+ */
 bool UniversitySystem::addCourse(const string& courseCode, const string& title, const string& instructor, int capacity) {
     if (courseCode.empty() || title.empty() || instructor.empty()) {
         cout << "cannot create a course, at least one field was blank" << endl;
@@ -112,6 +198,15 @@ bool UniversitySystem::addCourse(const string& courseCode, const string& title, 
     return true;
 }
 
+/**
+ @brief removes a course from the system
+ 
+ @details also drops all enrolled students from the course
+ 
+ @param courseCode the code of the course to remove
+ 
+ @return (bool) true if removed successfully, false otherwise
+ */
 bool UniversitySystem::removeCourse(const string& courseCode) {
     auto iter = courses.find(courseCode);
     if (iter == courses.end()) {
@@ -134,6 +229,18 @@ bool UniversitySystem::removeCourse(const string& courseCode) {
     return true;
 }
 
+/**
+ @brief updates course information
+ 
+ @details fields are updated only if non-empty (for strings) or positive (for capacity)
+ 
+ @param courseCode the code of the course to update
+ @param newTitle the new title of the course (optional)
+ @param newInstructor the new instructor's name (optional)
+ @param newCapacity the new course capacity (optional)
+ 
+ @return (bool) true if course exists and is updated, false otherwise
+ */
 bool UniversitySystem::updateCourse(const string& courseCode, const string& newTitle, const string& newInstructor, int newCapacity) {
     auto iter = courses.find(courseCode);
     if (iter == courses.end()) {
@@ -160,15 +267,39 @@ bool UniversitySystem::updateCourse(const string& courseCode, const string& newT
     return true;
 }
 
+/**
+ @brief returns a pointer to a Course object
+ 
+ @param courseCode the course code
+ 
+ @return (Course*) pointer to the Course object or null pointer if not found
+ */
 Course* UniversitySystem::getCourse(const string& courseCode) {
     auto iter = courses.find(courseCode);
     return (iter != courses.end()) ? &(iter->second) : nullptr;
 }
 
+/**
+ @brief checks if a course exists
+ 
+ @param courseCode the course code
+ 
+ @return (bool) true if course exists, false otherwise
+ */
 bool UniversitySystem::courseExists(const string& courseCode) const {
     return courses.find(courseCode) != courses.end();
 }
 
+/**
+ @brief enrolls a student in a course
+ 
+ @details updates both course and student records. logs the activity
+ 
+ @param studentID the student to enroll
+ @param courseCode the course to enroll in
+ 
+ @return (bool) true if enrolled successfully, false otherwise
+ */
 bool UniversitySystem::enrollStudentInCourse(const string& studentID, const string& courseCode) {
     if (!studentExists(studentID) || !courseExists(courseCode)) {
         cout << "either student or course doesn't exist -- can't enroll" << endl;
@@ -188,6 +319,14 @@ bool UniversitySystem::enrollStudentInCourse(const string& studentID, const stri
     return false;
 }
 
+/**
+ @brief drops a student from a course
+ 
+ @param studentID the student to drop
+ @param courseCode the course to drop from
+ 
+ @return (bool) true if dropped successfully, false otherwise
+ */
 bool UniversitySystem::dropStudentFromCourse(const string& studentID, const string& courseCode) {
     if (!studentExists(studentID) || !courseExists(courseCode)) {
         cout << "either student or course doesn't exist -- can't drop" << endl;
@@ -207,6 +346,13 @@ bool UniversitySystem::dropStudentFromCourse(const string& studentID, const stri
     return false;
 }
 
+/**
+ @brief lists all courses a student is enrolled in
+ 
+ @details displays course codes and names for a given student ID
+ 
+ @param studentID the ID of the student
+ */
 void UniversitySystem::listStudentCourses(const string& studentID) const {
     auto iter = students.find(studentID);
     if (iter == students.end()) {
@@ -219,6 +365,13 @@ void UniversitySystem::listStudentCourses(const string& studentID) const {
     student.displayEnrolledCourses();
 }
 
+/**
+ @brief lists all students enrolled in a course
+ 
+ @details includes both enrolled and waitlisted students
+ 
+ @param courseCode the course to list students for
+ */
 void UniversitySystem::listCourseStudents(const string& courseCode) const {
     auto iter = courses.find(courseCode);
     if (iter == courses.end()) {
@@ -232,6 +385,11 @@ void UniversitySystem::listCourseStudents(const string& courseCode) const {
     course.displayWaitlist();
 }
 
+/**
+ @brief displays all students in the system
+ 
+ @details outputs each student's ID, name, and number of enrolled courses
+ */
 void UniversitySystem::displayAllStudents() const {
     if (students.empty()) {
         cout << "no students in the system" << endl;
@@ -245,6 +403,11 @@ void UniversitySystem::displayAllStudents() const {
     }
 }
 
+/**
+ @brief displays all courses in the system
+ 
+ @details shows each course's code, title, instructor, enrollment status, and waitlist size
+ */
 void UniversitySystem::displayAllCourses() const {
     if (courses.empty()) {
         cout << "no courses in the system" << endl;
@@ -258,6 +421,11 @@ void UniversitySystem::displayAllCourses() const {
     }
 }
 
+/**
+ @brief displays all logged system activities
+ 
+ @details includes timestamp, action tyep, student ID (if applicable), course code (if applicable), and details
+ */
 void UniversitySystem::displayActivityLog() const {
     if (activityLog.empty()) {
         cout << "no activities logged" << endl;
@@ -277,6 +445,13 @@ void UniversitySystem::displayActivityLog() const {
     }
 }
 
+/**
+ @brief displays the most recent activities from the log
+ 
+ @details outputs the last `count` entries
+ 
+ @param count number of recent activities to show
+ */
 void UniversitySystem::displayRecentActivities(int count) const {
     if (activityLog.empty()) {
         cout << "no activities logged" << endl;
@@ -298,6 +473,13 @@ void UniversitySystem::displayRecentActivities(int count) const {
     }
 }
 
+/**
+ @brief searches for a student by full name
+ 
+ @param name the name to search
+ 
+ @return (pair<bool, string>) (true, studentID) if found, (false, "") otherwise
+ */
 pair<bool, string> UniversitySystem::searchStudentByName(const string& name) const {
     for (const auto& pair : students) {
         if (pair.second.getFullName() == name) {
@@ -307,6 +489,13 @@ pair<bool, string> UniversitySystem::searchStudentByName(const string& name) con
     return make_pair(false, "");
 }
 
+/**
+ @brief searches for a course by title
+ 
+ @param title the title to search
+ 
+ @return (pair<bool, string>) (true, courseCode) if found, (false, "") otherwise
+ */
 pair<bool, string> UniversitySystem::searchCourseByTitle(const string& title) const {
     for (const auto& pair : courses) {
         if (pair.second.getTitle() == title) {
@@ -316,6 +505,13 @@ pair<bool, string> UniversitySystem::searchCourseByTitle(const string& title) co
     return make_pair(false, "");
 }
 
+/**
+ @brief returns all students taught by a specific instructor
+ 
+ @param instructor the instructor name to filter by
+ 
+ @return (map<string, string>) of student IDs to names for students taught by the instructor
+ */
 map<string, string> UniversitySystem::getStudentsByInstructor(const string& instructor) const {
     map<string, string> result;
     
@@ -334,14 +530,29 @@ map<string, string> UniversitySystem::getStudentsByInstructor(const string& inst
     return result;
 }
 
+/**
+ @brief returns the total number of students in the system
+ 
+ @return (int) total number of students
+ */
 int UniversitySystem::getTotalStudents() const {
     return students.size();
 }
 
+/**
+ @brief returns the total number of courses in the system
+ 
+ @return (int) total number of courses
+ */
 int UniversitySystem::getTotalCourses() const {
     return courses.size();
 }
 
+/**
+ @brief returns the total number of student-course enrollments
+ 
+ @return (int) total enrollments across all students
+ */
 int UniversitySystem::getTotalEnrollments() const {
     int total = 0;
     for (const auto& pair : students) {
@@ -350,6 +561,11 @@ int UniversitySystem::getTotalEnrollments() const {
     return total;
 }
 
+/**
+ @brief displays system-wide statistics
+ 
+ @details includes total students, courses, enrollments, and average enrollment per course
+ */
 void UniversitySystem::displaySystemStatistics() const {
     cout << "\n=== System Statistics ===" << endl;
     cout << "Total Students: " << getTotalStudents() << endl;
@@ -363,6 +579,15 @@ void UniversitySystem::displaySystemStatistics() const {
     }
 }
 
+/**
+ @brief loads student, course, and enrollment data from a file
+ 
+ @details parses a CSV-style filie and updates system state accordingly. lines must begin with STUDENT, COURSE, or ENROLL
+ 
+ @param fileName path to the file to load
+ 
+ @return (bool) true if loading succeeds, false otherwise
+ */
 bool UniversitySystem::loadFromFile(const string& fileName) {
     ifstream file(fileName);
         if (!file.is_open()) {

@@ -10,6 +10,11 @@
 
 using namespace std;
 
+/**
+ @brief displays the main menu options to the user
+ 
+ @details prints a numbered list of available actions in the University Course Management system
+ */
 void displayMenu() {
     cout << "\n=== University Course Management System ===" << endl;
     cout << "1. Add Student" << endl;
@@ -36,11 +41,25 @@ void displayMenu() {
     cout << "Enter your choice: ";
 }
 
+/**
+ @brief clears invalid input from the input buffer
+
+ @details useful when a user enters non-integer input when an integer is expected
+ */
 void clearInput() {
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
+/**
+ @brief gets a string input from the user
+ 
+ @details prompts the user with a given message and reads and entire line of input
+ 
+ @param prompt the message displayed to prompt the user for input
+ 
+ @return (string) the user's input
+ */
 string getStringInput(const string& prompt) {
     string input;
     cout << prompt;
@@ -48,6 +67,15 @@ string getStringInput(const string& prompt) {
     return input;
 }
 
+/**
+ @brief gets an integer input from the user
+ 
+ @details prompts the user with a given message until the user enters a valid integer
+ 
+ @param prompt the message displayed to prompt the user for input
+ 
+ @return (int) the user's input
+ */
 int getIntInput(const string& prompt) {
     int input;
     cout << prompt;
@@ -59,6 +87,13 @@ int getIntInput(const string& prompt) {
     return input;
 }
 
+/**
+ @brief runs a demonstration of system features
+ 
+ @details add demo students and courses, enrolls them, tests edge cases like waitlists, performs searches, and displays data
+ 
+ @param system the reference to the UniversitySystem object being used
+ */
 void demoMode(UniversitySystem& system) {
     cout << "\n=== DEMO MODE - Testing All Features ===" << endl;
     
@@ -71,7 +106,7 @@ void demoMode(UniversitySystem& system) {
     system.addStudent("S005", "Eva Brown");
     
     // Add courses
-    cout << "2. Adding courses..." << endl;
+    cout << "\n2. Adding courses..." << endl;
     system.addCourse("CS101", "Introduction to Computer Science", "Dr. Smith", 25);
     system.addCourse("MATH201", "Calculus I", "Dr. Johnson", 30);
     system.addCourse("ENG101", "English Composition", "Dr. Davis", 20);
@@ -79,7 +114,7 @@ void demoMode(UniversitySystem& system) {
     system.addCourse("HIST101", "World History", "Dr. Brown", 35);
     
     // Enroll students in courses
-    cout << "3. Enrolling students in courses..." << endl;
+    cout << "\n3. Enrolling students in courses..." << endl;
     system.enrollStudentInCourse("S001", "CS101");
     system.enrollStudentInCourse("S001", "MATH201");
     system.enrollStudentInCourse("S002", "CS101");
@@ -92,7 +127,7 @@ void demoMode(UniversitySystem& system) {
     system.enrollStudentInCourse("S005", "ENG101");
     
     // Test waitlist functionality
-    cout << "4. Testing waitlist functionality..." << endl;
+    cout << "\n4. Testing waitlist functionality..." << endl;
     for (int i = 6; i <= 20; ++i) {
         string studentID = "S" + string(3 - to_string(i).length(), '0') + to_string(i);
         string name = "Student" + to_string(i);
@@ -101,13 +136,13 @@ void demoMode(UniversitySystem& system) {
     }
     
     // Display results
-    cout << "5. Displaying results..." << endl;
+    cout << "\n5. Displaying results..." << endl;
     system.displayAllStudents();
     system.displayAllCourses();
     system.displaySystemStatistics();
     
     // Test search operations
-    cout << "6. Testing search operations..." << endl;
+    cout << "\n6. Testing search operations..." << endl;
     auto studentSearch = system.searchStudentByName("Alice Johnson");
     if (studentSearch.first) {
         cout << "Found student: " << studentSearch.second << endl;
@@ -119,7 +154,7 @@ void demoMode(UniversitySystem& system) {
     }
     
     // Test instructor search
-    cout << "7. Testing instructor search..." << endl;
+    cout << "\n7. Testing instructor search..." << endl;
     auto studentsByInstructor = system.getStudentsByInstructor("Dr. Smith");
     cout << "Students taught by Dr. Smith:" << endl;
     for (const auto& pair : studentsByInstructor) {
@@ -127,22 +162,31 @@ void demoMode(UniversitySystem& system) {
     }
     
     // Test administrative tools
-    cout << "8. Testing administrative tools..." << endl;
-    system.listStudentCourses("S001");
-    system.listCourseStudents("CS101");
+    cout << "\n8. Testing administrative tools..." << endl;
+    system.listStudentCourses("S003");
+    system.listCourseStudents("PHYS101");
     
     // Test activity log
-    cout << "9. Testing activity log..." << endl;
+    cout << "\n9. Testing activity log..." << endl;
     system.displayRecentActivities(10);
     
     // Test drop functionality
-    cout << "10. Testing drop functionality..." << endl;
-    system.dropStudentFromCourse("S001", "MATH201");
-    system.listStudentCourses("S001");
+    cout << "\n10. Testing drop functionality..." << endl;
+    system.dropStudentFromCourse("S003", "PHYS101");
+    system.listStudentCourses("S003");
+    
+    //Test waitlist updating functionality
+    cout << "\n11. Testing updated waitlist functionality..." << endl;
+    system.listCourseStudents("PHYS101");
     
     cout << "\n=== DEMO COMPLETE ===" << endl;
 }
 
+/**
+ @brief entry point of the application
+ 
+ @details initializes the UniversitySystem and displays a menu loop for user interaction
+ */
 int main(int argc, const char * argv[]) {
     UniversitySystem system;
     int choice;

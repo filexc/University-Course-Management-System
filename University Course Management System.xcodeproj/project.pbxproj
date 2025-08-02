@@ -67,16 +67,16 @@
 		8125050F2E3D7672009C5331 /* UniversityCourseManagementSystem */ = {
 			isa = PBXGroup;
 			children = (
+				812505162E3D796B009C5331 /* test_data1.txt */,
+				812505172E3D79A6009C5331 /* test_data2.txt */,
 				812505182E3D7BCF009C5331 /* test_data3.txt */,
 				812505192E3D7C9D009C5331 /* test_data4.txt */,
+				812505092E3D7672009C5331 /* Makefile */,
 				812505062E3D7672009C5331 /* Course.h */,
 				812505072E3D7672009C5331 /* Course.cpp */,
 				812505082E3D7672009C5331 /* main.cpp */,
-				812505092E3D7672009C5331 /* Makefile */,
 				8125050A2E3D7672009C5331 /* Student.h */,
 				8125050B2E3D7672009C5331 /* Student.cpp */,
-				812505162E3D796B009C5331 /* test_data1.txt */,
-				812505172E3D79A6009C5331 /* test_data2.txt */,
 				8125050D2E3D7672009C5331 /* UniversitySystem.h */,
 				8125050E2E3D7672009C5331 /* UniversitySystem.cpp */,
 			);
