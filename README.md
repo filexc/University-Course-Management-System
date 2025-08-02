@@ -37,7 +37,7 @@ g++ -std=c++17 -Wall -o university_system main.cpp Student.cpp Course.cpp Univer
 | Container | Purpose | Location |
 |:---------:|:-------:|:--------:|
 | `map` | Student and course registries | `UniversitySystem` class |
-| `set` | Enrollment Lists | `Student` and `Course` classese |
+| `set` | Enrollment Lists | `Student` and `Course` classes |
 | `pair` | Search operations and associations | `UniversitySystem` class |
 | `queue` | Course Waitlists | `Course` class |
 | `deque` | Activity Logs | `UniversitySystem` class |
